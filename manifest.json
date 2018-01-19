@@ -1,13 +1,8 @@
 {
-    "name": "DevToolsPanel",
+    "name": "Jim's Devtools with Space",
     "version": "0.1",
-    "description": "A bare-bones example of communication between devtools and an inspected page",
+    "description": "A few custom styles to make devtools feel more spacious",
     "devtools_page": "devtools.html",
-    "background": {
-        "scripts": [
-            "background.js"
-        ]
-    },
     "permissions": [
         "tabs", 
         "http://*/*",
