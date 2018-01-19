@@ -1,6 +1,4 @@
-// Can use
-// chrome.devtools.*
-// chrome.extension.*
-
-// Create a tab in the devtools area
-chrome.devtools.panels.create("DemoPanel", "toast.png", "panel.html", function(panel) {});
+fetch(`/style.css`)
+	.then(res => res.text())
+	.then(styles => chrome.devtools.panels.applyStyleSheet(styles))
+	.catch(e => console.error(e));
